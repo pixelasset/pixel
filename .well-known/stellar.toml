@@ -7,7 +7,7 @@ FEDERATION_SERVER="https://stellarid.io/federation/"
 # asset with meta info
 [[CURRENCIES]]
 code="PIX"
-issuer="GBT3C2YIJ7KMDOMZJDMKVRKCWMIADKYIOLCFEEVLZWPQYDCYYTO4COGC"
+issuer="GDDMP2SDG6STLIINYOR6ZD6OHKNRT6KZIX5HXBMD6JMAXQSNJORPCY53"
 display_decimals=2
 name="Pixel Asset"
 desc="Revolutionizing the Art Industry"
