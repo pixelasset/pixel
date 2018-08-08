@@ -8,36 +8,45 @@
         <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">  
 
         <link rel="stylesheet" href="css/style.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script> 
+        <script src="js/script.js"></script>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Pixel | Community</title>
     </head>
     <body>
+        <!-- N A V I G A T I O N   S E C T I O N -->
         <nav class="navigation">
             <ul class="nav">
                 <li class="nav__item nav__item--logo">Pixel</li>
-                <li class="nav__item nav__item--features"><a href="#" class="nav__link">Features</a></li>
-                <li class="nav__item nav__item--team"><a href="#" class="nav__link">Team</a></li>
-                <li class="nav__item nav__item--faq"><a href="#" class="nav__link">Faq</a></li>
+                <li class="nav__item nav__item--features"><a href="#features" class="nav__link">Features</a></li>
+                <li class="nav__item nav__item--team"><a href="#team" class="nav__link">Team</a></li>
+                <li class="nav__item nav__item--faq"><a href="#exchanges" class="nav__link">Exchanges</a></li>
+                <li class="nav__item nav__item--faq"><a href="#faq" class="nav__link">Faq</a></li>
             </ul>
         </nav>
-        <header class="v-header container">
-            <div class="fullscreen-video-wrap">
-                <video src="img/video.mp4" autoplay loop></video>
+        <!-- H E A D E R   S E C T I O N-->
+        <header class="v--header container">
+            <div class="fullscreen--wrap">
+                <video src="img/video.mp4" autoplay muted loop></video>
             </div>
-            <div class="header-overlay"></div>
-            <div class="header-content">
+            <div class="header--overlay"></div>
+            <div class="header--content">
                 <h1 class="heading-1">Pixel</h1>
-            <!-- <a class="telegram" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
-                    <svg width="100" height="100" viexBox="0 0 200 200"class="telegram__icon">
-                        <use xlink:href="img/SVG/telegram-5.svg#telegram-5"></use>
+                <!-- <p class="header-content__sub">Revolucionando la industria del arte y el diseño!</p> -->
+                <a href="https://t.me/joinchat/FGmqAQ5akctzZAzntxO9Ng" class="header--content__svg">
+                    <svg width="100" height="100" viexBox="0 0 200 200"class="header__svg"> 
+                        <use xlink:href="img/SVG/footer-icons.svg#icon-telegram"></use>
                     </svg>
-                </a> -->
+                </a>
             </div>
 
         </header>
         <!-- F E A T U R E S -->
-        <section class="features">
+        <section class="features" id="features">
                 <div class="feature">
                     <svg class="feature__icon">
                         <use xlink:href="img/sprite.svg#icon-globe"></use>
@@ -82,29 +91,29 @@
                 </div>
         </section>
         <!-- T E A M   S E C T I O N-->
-        <section class="team">
+        <section class="team" id="team">
             <div class="partner">
                 
 
             </div>
             <div class="partner">
                 <img src="img/profile.jpeg" class="partner__img">
-                <h3 class="partner__tittle heading-3" >Creator</h3>
+                <h3 class="partner__tittle heading-3" >Andres Antonio</h3>
                 <p class="partner__description">Front end and blockchain developer</p>
                 <div class="partner__btns">
-                    <a class="telegram" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
-                        <svg width="100" height="100" viexBox="0 0 200 200"class="telegram__icon">
-                            <use xlink:href="img/SVG/telegram-5.svg#telegram-5"></use>
+                    <a class="partner__btns--linkdin" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+                        <svg width="100" height="100" viexBox="0 0 200 200"class="partner__btns--svg">
+                            <use xlink:href="img/SVG/social-media.svg#icon-social-linkedin-circular"></use>
                         </svg>
                     </a>
-                    <a class="telegram" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
-                        <svg width="100" height="100" viexBox="0 0 200 200"class="telegram__icon">
-                            <use xlink:href="img/SVG/telegram-5.svg#telegram-5"></use>
+                    <a class="partner__btns--mail" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+                        <svg width="100" height="100" viexBox="0 0 200 200"class="partner__btns--svg">
+                            <use xlink:href="img/SVG/social-media.svg#icon-envelop"></use>
                         </svg>
                     </a>
-                    <a class="telegram" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
-                        <svg width="100" height="100" viexBox="0 0 200 200"class="telegram__icon">
-                            <use xlink:href="img/SVG/telegram-5.svg#telegram-5"></use>
+                    <a class="partner__btns--twitter" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+                        <svg width="100" height="100" viexBox="0 0 200 200"class="partner__btns--svg">
+                            <use xlink:href="img/SVG/social-media.svg#icon-social-twitter-circular"></use>
                         </svg>
                     </a>
                 </div>
@@ -114,17 +123,59 @@
                 
             </div>
         </section>
-        <!-- F A Q   S E C T I O N -->
-        <section class="faq">
-            <div class="faq__1">
-                <h4 class="heading-4">What is Pixel coin?</h4>
-                <p class="p">We are a blockchain enthusiasts who seek to bring to the design community a payment method or an asset they can trust on.</p>
+        <!-- E X C H A N G E S   S E C T I O N-->
+        <section class="exchanges" id="exchanges">
+            <div class="exchange">
+
             </div>
-            <div class="faq__1">
+            <div class="exchange">
+                <img src="img/stellar_port.jpeg" class="exchange__img">
+                <h5 class="exchange__tittle" ><a href="https://stellarport.io/exchange/alphanum4/PIX/GDDMP2SDG6STLIINYOR6ZD6OHKNRT6KZIX5HXBMD6JMAXQSNJORPCY53/native/XLM/Stellar"class="heading-5 exchange__link">StellarPort.io</a></h5>
+
+            </div>
+            <div class="exchange">
+
+            </div>
+        </section>
+        <!-- F A Q   S E C T I O N -->
+        <section class="faq" id="faq">
+            <div class="single">
                 <h4 class="heading-4">What is Pixel coin?</h4>
-                <p class="p">We are a blockchain enthusiasts who seek to bring to the design community a payment method or an asset they can trust on.</p>
+                <p class="p">We are a blockchain enthusiasts designers and artists who seek to bring to this community a payment method they can trust on.</p>
+            </div>
+            <div class="single">
+                <h4 class="heading-4">How many coins are there?</h4>
+                <p class="p">There will be ever 21 million pixels as total supply.</p>
+            </div>
+            <div class="single">
+                <h4 class="heading-4">Why 21 million coins only?</h4>
+                <p class="p">We believe in the philosophy of Satoshi Nakamoto and the maths behind his number. We also think is a low supply and thus, can serve as monetary purposes because it's deflationary feature.</p>
             </div>
 
         </section>
+        <!-- F O O T E R   S E C T I O N-->
+        <footer class="footer">
+            <div class="footer__twitter">
+                <a href="https://twitter.com/AssetPixel">
+                    <svg width="100" height="100" viexBox="0 0 200 200"class="footer__svg">
+                        <use xlink:href="img/SVG/footer-icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__telegram">
+                <a href="https://t.me/joinchat/FGmqAQ5akctzZAzntxO9Ng">
+                    <svg width="100" height="100" viexBox="0 0 200 200"class="footer__svg">
+                        <use xlink:href="img/SVG/footer-icons.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__reddit">
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+                    <svg width="100" height="100" viexBox="0 0 200 200"class="footer__svg">
+                        <use xlink:href="img/SVG/footer-icons.svg#icon-reddit"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
